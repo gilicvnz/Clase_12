@@ -39,7 +39,7 @@
 
             <p>En Chile, <a href="https://bcn.cl/2ewsw" target="_blank">la ley</a> obliga a acreditarse a las instituciones de educación superior. Carreras, entre las que se cuentan las de Diseño, quedan exentas de esta obligatoriedad.</p>
 
-            <p>Cada acreditación obligatoria e institucional evalúa el cumplimiento del proyecto corporativo y verifica la existencia de mecanismos eficaces de autorregulación y de aseguramiento de la calidad. A partir del resultado de cada evaluación, la <a href="https://www.cnachile.cl/Paginas/Acreditacion-institucional.aspx">Comisión Nacional de Acreditación (<small>CNA</small>)</a> determina el plazo para la próxima, con tres niveles de cumplimiento:</p>
+            <p>Cada acreditación obligatoria e institucional evalúa el cumplimiento del proyecto corporativo y verifica la existencia de mecanismos eficaces de autorregulación y de aseguramiento de la calidad. A partir del resultado de cada evaluación, la <a href="https://www.cnachile.cl/Paginas/Acreditacion-institucional.aspx" target="_blank">Comisión Nacional de Acreditación (<small>CNA</small>)</a> determina el plazo para la próxima, con tres niveles de cumplimiento:</p>
 
             <ul>
                 <li><em>Acreditada en nivel de excelencia:</em> de 6 a 7 años.</li>
@@ -49,8 +49,7 @@
 
             <p>Por acotar, podemos <em>revisar las acreditaciones de las universidades</em>, que son las instituciones responsables de ofrecer el 35,82% de las vacantes totales de la educación superior para carreras de Diseño en 2026 (2.717 cupos del total de 7.586, según registros del <a href="https://www.mifuturo.cl/bases-de-datos-de-oferta-academica/" target="_blank">Servicio de Información de Educación Superior, <small>SIES</small></a>).</p>
 
-            <p>Revisando estas acreditaciones, podemos encontrar plazos de acreditación que oscilan entre los 3 y los 7 años.
-            </p>
+            <p>Revisando estas acreditaciones, podemos encontrar plazos de acreditación que oscilan entre los 3 y los 7 años.</p>
 
             <h4>¿Existe una correlación directa entre el nivel de acreditación de una universidad y el costo de su arancel anual?</h4>
 
@@ -66,43 +65,42 @@
 
             <p>Para visualizar patrones en estructuras complejas, los <a href="https://datavizcatalogue.com/ES/metodos/diagrama_de_dispersion.html" target="_blank">diagramas de distribución</a> resultan idóneos. Al proyectar una colección de puntos mediante coordenadas cartesianas, el cruce de las variables en los ejes horizontal y vertical permite detectar la presencia y fuerza de una correlación entre ambas.</p>
 
-            <p>Al trazar una línea de mejor ajuste entre el programa de menor costo y acreditación básica (Diseño de Interiores y Ambientes en la <small>UNIACC</small>) hasta la opción de mayor costo y acreditación (Diseño en la <small>PUC</small>), se observa una pendiente ascendente en la distribución de los puntos. Si bien esto sugiere una correlación positiva, donde un mayor número de años de acreditación tiende a coincidir con aranceles más altos, la fuerza de correlación de débil y los valores atípicos son varios.</p>
+            <p>Al trazar una línea de mejor ajuste entre el programa de menor costo y acreditación básica (Diseño de Interiores y Ambientes en la <small>UNIACC</small>) hasta la opción de mayor costo y acreditación (Diseño en la <small>PUC</small>), se observa una pendiente ascendente en la distribución de los puntos. Si bien esto sugiere una correlación positiva, donde un mayor número de años de acreditación tiende a coincidir con aranceles más altos, la fuerza de correlación es débil y los valores atípicos son varios.</p>
 
             <h4>¿Cuánto cuesta realmente terminar Diseño en Chile?</h4>
 
             <p>El arancel anual es el número que domina la conversación sobre costos en educación superior. Es lo que comparan las familias, lo que aparece en los portales de admisión y lo que define, en el imaginario común, si una universidad es cara o económica. Sin embargo, ese número supone algo que rara vez ocurre: que el estudiante se titula exactamente en el tiempo que indica el plan de estudios.</p>
-            
+
             <p>Según el <a href="https://educacionsuperior.mineduc.cl/informe-duracion-real/" target="_blank">Informe de Duración Real y Sobreduración de Carreras del SIES</a>, los estudiantes de pregrado en Chile demoran en promedio 2,5 semestres más de lo que establece la duración formal de su carrera. En las carreras de Diseño universitarias, esa brecha varía entre 1 semestre extra en la Pontificia Universidad Católica de Chile y 4 semestres extra en la Pontificia Universidad Católica de Valparaíso. Al multiplicar esa diferencia por el arancel semestral de cada institución, el costo total proyectado al titularse cambia considerablemente, y el ranking de universidades más baratas se reorganiza.</p>
-            
+
             <p>En el siguiente gráfico se puede ver la respuesta.</p>
-            
+
             <figure>
                 <div style="position: relative; height: 480px; width: 100%;">
-                <canvas id="otro"></canvas>
+                    <canvas id="otro"></canvas>
                 </div>
                 <figcaption>
                     Costo total proyectado al titularse en carreras de Diseño por universidad. Calculado como (arancel anual ÷ 2) × semestres reales + costo de titulación. Datos de arancel obtenidos del
-                    <a href="https://www.mifuturo.cl/bases-de-datos-de-oferta-academica/" target="_blank">Servicio de Información de Educación Superior (SIES)</a>. Datos de duración real obtenidos del <a href="https://educacionsuperior.mineduc.cl/informe-duracion-real/" target="_blank">Informe de Duración Real y Sobreduración, SIES 2024.</a>.
+                    <a href="https://www.mifuturo.cl/bases-de-datos-de-oferta-academica/" target="_blank">Servicio de Información de Educación Superior (SIES)</a>. Datos de duración real obtenidos del <a href="https://educacionsuperior.mineduc.cl/informe-duracion-real/" target="_blank">Informe de Duración Real y Sobreduración, SIES 2024</a>.
                 </figcaption>
             </figure>
 
-            <p>Para representar esta información se eligieron <a href="https://datavizcatalogue.com/ES/metodos/grafico_de_barras_apiladas.html" target="_blank">barras apiladas horizontales</a>, un tipo de visualización que permite comparar simultáneamente el costo total entre instituciones y la proporción que corresponde a sobreduración dentro de cada una. A diferencia de un gráfico de barras simple, el apilado hace visible qué parte del costo era predecible al matricularse (el tramo negro, equivalente al plan formal) y qué parte emerge de los semestres adicionales (el tramo rojo). Ordenar las barras de menor a mayor costo total permite leer el gráfico como un ranking real, no publicitado.</p>
-            
+            <p>Para representar esta información se eligieron <a href="https://datavizcatalogue.com/ES/metodos/grafico_de_barras_apiladas.html" target="_blank">barras apiladas horizontales</a>, un tipo de visualización que permite comparar simultáneamente el costo total entre instituciones y la proporción que corresponde a sobreduración dentro de cada una. A diferencia de un gráfico de barras simple, el apilado hace visible qué parte del costo era predecible al matricularse (el tramo negro, equivalente al plan formal) y qué parte emerge de los semestres adicionales (el tramo naranja). Ordenar las barras de menor a mayor costo total permite leer el gráfico como un ranking real, no publicitado.</p>
+
             <p>El resultado es contraintuitivo. La Pontificia Universidad Católica de Chile, que encabeza cualquier lista por arancel anual con $8.080.000, acumula un costo total proyectado de $44.440.000 gracias a su baja sobreduración de apenas 1 semestre. La Pontificia Universidad Católica de Valparaíso, con un arancel de $6.915.000 (casi $1.200.000 menos por año), llega a $48.405.000 en costo total debido a sus 4 semestres extra. Pagar menos por año puede terminar siendo más caro al titularse. El arancel anual, solo, no alcanza para responder cuánto cuesta realmente estudiar Diseño en Chile.</p>
-            
+
             <h5>Fuentes</h5>
             <p><a href="https://www.cnachile.cl/Paginas/Acreditacion-institucional.aspx" target="_blank">Comisión Nacional de Acreditación (CNA). (2026). Acreditación institucional.</a></p>
             <p><a href="https://bcn.cl/2ewsw" target="_blank">Biblioteca del Congreso Nacional de Chile. (2023). Ley 20.129.</a></p>
             <p><a href="https://www.mifuturo.cl/bases-de-datos-de-oferta-academica/" target="_blank">Servicio de Información de Educación Superior (SIES). (2026). Base de datos de oferta académica 2026.</a></p>
-            <p><a href="https://www.mifuturo.cl/servicio-de-informacion-de-educacion-super/" target="_blank">Servicio de Información de Educación Superior (SIES). (2026). Servicio de información de educación superior.</a></p>
+            <p><a href="https://www.mifuturo.cl/servicio-de-informacion-de-educacion-superior/" target="_blank">Servicio de Información de Educación Superior (SIES). (2026). Servicio de información de educación superior.</a></p>
             <p><a href="https://educacionsuperior.mineduc.cl/informe-duracion-real/" target="_blank">Servicio de Información de Educación Superior (SIES). (2024). Informe de Duración Real y Sobreduración de las Carreras.</a></p>
+
         </main>
 
         <footer>
             <div>
-                <a href="https://www.reuters.com/graphics/IRAN-CRISIS/OIL-CONSUMERS/akpeyynmypr/" target="_blank"
-                    >Inspirado en Reuters</a
-                >
+                <a href="https://www.reuters.com/graphics/IRAN-CRISIS/OIL-CONSUMERS/akpeyynmypr/" target="_blank">Inspirado en Reuters</a>
                 <a href="https://github.com/profesorfaco/troncal">Diseño y visualización de información</a>
             </div>
         </footer>
